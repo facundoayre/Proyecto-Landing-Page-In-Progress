@@ -69,10 +69,10 @@ body {
     width: 100vw;
     max-width: 100%;
     max-height: 100%;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /* background: #7CDEDC; */
-    font-family: "Roboto";
-    background-color: #c0d6d6;
+    /* font-family: "Roboto"; */
+    /* background-color: #c0d6d6; */
 }
 
 a {
@@ -106,7 +106,6 @@ header{
     align-items: center;
     align-self: center;
     justify-content: center;
-    background-color: #c0d6d6;
 
 }
 
@@ -116,15 +115,34 @@ nav{
     width: 70%;
 }
 
+.intento{
+    position: absolute;
+    color: rgb(121, 63, 118);
+    display: block;
+    font-size: 5rem;
+    font-style:oblique;
+    text-align: center;
+}
 
+.img_landscape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.img_landscape img{
+    width: 90%;
+    
+}
 .img{
     max-height: 100px;
     border-radius: 5px;
     display: none;
     background-color: #c0d6d6;
     color: #c0d6d6;
-}
+    animation: bounce 3s ease infinite;
 
+}
 
 .menu{
     display: flex;
@@ -133,8 +151,22 @@ nav{
     gap:3px;
 }
 
+.menu li:nth-child(1){
+    animation: bounce 3s ease infinite;
+}.menu li:nth-child(3){
+    animation: bounce 3s ease infinite;
+}
+.menu li:nth-child(5){
+    animation: bounce 3s ease infinite;
+}
+.menu li:nth-child(2){
+    animation: spin 3s linear infinite;
+}
+.menu li:nth-child(4){
+    animation: spin 3s linear infinite;
+}
 section{
-    background: #aee0e0;
+    /* background: #aee0e0; */
     height: 200px;
     margin: 1px auto;
 }
@@ -151,6 +183,7 @@ main section{
 .first-section_container{
     display: flex;
     width: 95%;
+    flex-wrap: wrap;
 }
 .first_section{
     display: flex;
@@ -158,6 +191,7 @@ main section{
     align-items: center;
     /* color: rgb(22, 22, 22); */
     text-align: center;
+    
 }
 
 
@@ -165,13 +199,15 @@ main section{
 
 .link{
     color: rgb(121, 63, 118);
+   
 }
 
-/* No funciona */
-.link a :hover{
+.link:hover{
     color: red;
+    
 }
-/*  */
+
+
 
 
 .main_img img{
@@ -182,6 +218,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     width: 100%;
     height: 100%;
     border-radius: 5px;
+
 }
 
 .divEnd_container{
@@ -193,7 +230,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 }
 
 .sectionNew_container{
-    background: #aee0e0;
+    /* background: #aee0e0; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -236,6 +273,36 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     text-align: center;
     justify-content: space-around;
     margin: 0 auto;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translate(0,0);
+    }
+    20%{
+        transform: translate(0,10px);
+    }
+    40%{
+        transform: translate(0,20px);
+    }
+    60%{
+        transform:translate(0,30px);
+    }
+    80%{
+        transform: translate(0,20px);
+    }
+    100%{
+        transform: translate(0,10px);
+    }
+}
+
+@keyframes spin{
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 
 @media screen and (min-width:1024px){
