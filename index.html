@@ -1,122 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CDN -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>Proyecto Landing Page</title>
-    <!-- Animate -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="icon" href="jalap.webp">
+    <title>SpicyTaste</title>
 </head>
-
 <body>
-    <!-- <div class="container">
-        <div class="container_nav">
-            <div class="logo_nav">
-                <img src="/forma.png" alt="forma">
-            </div>
-            <div class="nav">
-                <div><a href="">INICIO</a> </div>
-                <div><a href=""> CONTACTOS</a></div>
-                <div><a href=""> SERVICIOS</a></div>
-            </div>
+   <header class="header">
+       <!-- IMAGEN  -->
+        <div class="header_logo">
+            <img class="logo" src="./spicytaste.png" alt="">
         </div>
-    </div> -->
-
-    <header>
-        <div>
-            <!-- <img class="img" src="/3d16a82b134b42538b3d2afe35a5026f (1).png" alt=""> -->
-            <img class="img" src="/logo.png" alt="">
-        </div>
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a class="link" href="#">Home</a>
-                </li>
-                <li>
-                    <a class="link" href="#">About</a>
-                </li>
-                <li>
-                    <a class="link" href="#">Services</a>
-                </li>
-                <li>
-                    <a class="link" href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a class="link" href="#">Contact</a>
-                </li>
+        <!-- NAVBAR -->
+        <nav class="nav">
+            <ul class="nav_list">
+                <li><a href="./login.html"> LOGIN</a></li>
+                <li><a href="./register.html"> REGISTRATE</a></li>
+                <li><a href="#conoce"> CONOCE MÁS</a></li>
+                <li><a href="#contacto"> CONTACTO</a></li>
             </ul>
-
         </nav>
+   </header>
+   <main class="main">
+        <!-- SECTION HERO -->
+        <section class="hero">
+            <div class="hero_img_container">
+                <img class="hero_img" src="otroHero.jpg" alt="">
+            </div>
+            <div class="hero_text">
+                <h2>Cansado de no encontrar ese sabor que le falta a tu vida?</h2>
+            <h2>Ningún condimento del super te llega a fascinar?</h2>
+            <h2>Toda promesa de algo picante te parece poco?</h2>
+            <h2>No busques más, acá está tu respuesta</h2>
+            </div>
+        </section>
 
-    </header>
-    <main>
-        <div class="img_landscape">
-            <p class="intento">Bienvenidos</p>
-            <img src="/img_01_01.jpg" alt="">
+        <!-- SECTION 1 - CONOCE MAS -->
+        <section class="section_conoce" id="conoce">
+        <div class="conoce_titulos">
+            <h2>Por qué elegirnos?</h2>
+            <h3>Conoce más</h3>
+            
         </div>
-        <div class="first-section_container">
-            <section class="first_section">
-                <p>Mi nombre es Facundo, tengo 24 años y comencé a estudiar programación hace unos meses. Me recibí de contador público en 2020 y estoy aprendiendo sobre esta área para cambiar de trabajo y especializarme dentro del ámbito de la programación </p>
-            </section>
-            <section class="main_img animate__animated animate__tada">
-                <img src="/undraw_calculator_re_alsc.svg" alt="">
-            </section>
-        
+        <div class="container_conoce">
+            <div class="item_conoce">
+                <i class="fa-solid fa-exclamation"></i>
+                <h3>NUEVO EMPRENDIMIENTO</h3>
+                <p>Somos un emprendimiento que empezó con la idea de buscar ese picante que no se consigue en otro lado, se convirtió en nuestro objetivo y también en el camino a seguir. Vení y acompañanos mientras mejoramos nuestro camino en lo picante.</p>
+            </div>
+            <div class="item_conoce">
+                <i class="fa-solid fa-fire"></i>
+                <h3>SABORES <span class="conoce_word">EXTRAVAGANTES</span></h3>
+                <p>Nuestras combinaciones que componen a las salsas secretas son fruto de experimentar y mezclar cosas que se cree no combinan, todo con el objetivo de expandir los horizontes del picante</p>
+            </div>
+            <div class="item_conoce">
+                <i class="fa-solid fa-pepper-hot"></i>
+                <h3>SORPRESA SEMANAL</h3>
+                <p>Además de tener nuestros sabores tradicionales, semanalmente agregamos y rotamos un sabor sorpresa que añade ese toque que le falta a tu semana</p>
+            </div>
+
         </div>
-        <!-- <div class="medium-section_container">
-            <section class="sectionNew_container">
-                <div>
-                    <h1>Lorem, ipsum dolor.</h1>
-                    Lorem ipsum
 
+        </section>
+        <!-- SECTION 2 - NIVELES DE PICANTE +FOTOS-->
+        <section class="section_productos">
+            <div class="title_productos">
+            <h2>Qué te ofrecemos?</h2>
+            <h3>Tenemos 4 variantes de condimentos picantes para deleitar tu paladar y acompañar cualquier comida, dependiendo de cuánto puedas soportar, y por supuesto la sorpresa semanal para los más aventureros</h3>
+            </div>
+            <div class="container_productos">
+                <div class="item_productos">
+                    <i class="fa-solid fa-wind"></i>
+                    <h3>LEVE</h3>
+                    <p>Como una brisa matutina, este condimento es para aquellos que quieren disfrutar del picante pero sin propasarse</p>
+                    <button class="btn_productos">COMPRAR</button>
                 </div>
-                <div class="sectionNew_items">
-                    <div class="newItems-div">
-                        <i class="fa fa-solid fa-folder-open"></i>
-                    <p> Lorem ipsum dolor sit amet.</p></div>
-                    <div class="newItems-div">
-                        <i class="fa fa-solid fa-user-secret"></i>
-                    <p> Lorem ipsum dolor sit amet.</p></div>
-                    <div class="newItems-div">
-                        <i class="fa fa-solid fa-laptop-code"></i>
-                    <p> Lorem ipsum dolor sit amet.</p></div>
+                <div class="item_productos">
+                    <i class="fa-solid fa-mortar-pestle"></i>
+                    <h3>MEDIANO</h3>
+                    <p>Este condimento es para aquellos que no quieren algo simple y sencillo, pero que todavia no estan preparados para el desafio real</p>
+                    <button class="btn_productos">COMPRAR</button>
                 </div>
-            </section>
-            <section class="sectionNew_container">
-                <div>
-                    <h1>Lorem, ipsum dolor.</h1>
-                    Lorem ipsum
+                <div class="item_productos">
+                    <i class="fa-solid fa-explosion"></i>
+                    <h3>INTENSO</h3>
+                    <p>Para guerreros experimentados en lo picante, este condimento otorga el poder clasico de lo que uno espera considerar como algo <span class="conoce_word">PICANTE</span></p>
+                    <button class="btn_productos">COMPRAR</button>
+                </div>
+                <div class="item_productos">
+                    <i class="fa-solid fa-biohazard"></i>
+                    <h3>EXTREMO</h3>
+                    <p>Este condimento no se recomienda para aquellos que no esten preparados a repreguntarse lo que es en verdad algo picante, ya que rompe con todo lo picante previo que hayas conocido</p>
+                    <button class="btn_productos">COMPRAR</button>
+                </div>
+                <div class="item_productos">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <h3>SORPRESA</h3>
+                    <p>Para que tu paladar no se acostumbre tenemos esta opción, y para todos aquellos temerarios. Puede ser muy picante o prácticamente nada. Depende de vos el averiguarlo.</p>
+                    <button class="btn_productos">COMPRAR</button>
+                </div>
+            </div>     
+        </section>
+        <!-- SECTION 3 - CONTACTOS -->
+        <section class="section_contactos" id="contacto">
+            <h2 class="title_contactos">Seguinos en nuestras redes sociales para mantenerte al tanto de todas nuestras nuevas creaciones y mezclas</h2>
 
-                </div>
-                <div class="sectionNew_items">
-                    <div class="newItems-div">
-                        <i class="fa fa-solid fa-bars"></i>
-                    <p> Lorem ipsum dolor sit amet.</p></div>
-                    <div class="newItems-div">
-                        <i class="fa fa-solid fa-bars"></i>
-                    <p> Lorem ipsum dolor sit amet.</p></div>
-                    <div class="newItems-div">
-                        <i class="fa fa-solid fa-bars"></i>
-                    <p> Lorem ipsum dolor sit amet.</p></div>
-                </div>
-            </section>
-        </div> -->
-            <!-- <div class="divEnd_container">
-                <img src="/website_under_construction.png" alt="" class="img_construction">
-            </div> -->
-    </main>
-    <!-- <footer>
-        <img src="/ce868244c32446cab5f8bf1c12a9ab8b.png" alt="">
-    </footer> -->
+            <div class="container_contactos">
+                    <a href="https://wa.me/1234567890"><i class="fa-brands fa-whatsapp-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+
+            </div>
+        </section>
+   </main>
+   <footer class="footer">
+
+    <p>©SpicyFood SRL, Todos los derechos reservados</p>
+   </footer>
+
 </body>
-
 </html>
